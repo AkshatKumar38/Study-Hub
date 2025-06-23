@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Study Hub
+
+A responsive, modern study collaboration platform built with Next.js, TypeScript, Tailwind CSS, and ShadCN/UI. This project showcases core social features like posts, profile editing, and a subject-focused feed — all with mock authentication.
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ ```bash
+ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Run the Development Server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```npm run dev```
+* Then open your browser at: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Technologies Used
 
-## Learn More
+* Next.js 15
+* React 19
+* TypeScript
+* Tailwind CSS v4
+* Lucide React Icons
+* shadcn/ui
 
-To learn more about Next.js, take a look at the following resources:
+### Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* User Authentication (Mock)
+  Register, log in, and log out functionality
+  Handled entirely on the frontend
+  User data is stored in localStorage
+* Dashboard
+  Feed of user-generated posts
+  Post types: Questions, resources, general content
+  Filter posts by subject via sidebar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Compose new posts with:
+  Text
+  Up to 5 images
+  One video file (max 10MB)
 
-## Deploy on Vercel
+* User Profile
+  View and edit:
+  Display name
+  University
+  Major
+  Year
+  Bio
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Post Composer
+  Drag-and-drop or select media
+  Text area with media preview
+  Media upload limits enforced
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Toast Notifications
+  Instant feedback for login, registration, post actions, etc.
+  Responsive Design
+
